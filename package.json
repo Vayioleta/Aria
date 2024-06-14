@@ -1,0 +1,17 @@
+{
+  "name": "aria-sql",
+  "version": "1.0.0",
+  "main": "start.js",
+  "type": "module",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "author": "vayioleta",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
+    "openai": "^4.47.1"
+  }
+}

@@ -1,0 +1,56 @@
+body {
+  font-family: "Inter", sans-serif;
+  --font-sans: "Inter";
+}
+
+/* Monaco Editor */
+.monaco-container {
+  width: 100%;
+  height: 100%;
+}
+
+.sql-container {
+  background-color: #1e1e1e;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333333;
+  position: relative;
+  width: 100%; /* O el tamaño que necesites */
+  height: 500px; /* O el tamaño que necesites */
+}
+
+.sql-respose {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #dfdfdf;
+  position: relative;
+  width: 100%; /* O el tamaño que necesites */
+  height: 200px; /* O el tamaño que necesites */
+  overflow: auto;
+}
+
+sql {
+  background-color: #1e1e1e;
+  color: #dfdfdf;
+  pointer-events: point;
+  cursor: pointer;
+}
+
+sql {
+  background-color: #1e1e1e;
+  color: #dfdfdf;
+  padding: .3rem; /* Ajusta el padding según lo necesites */
+  border: none;
+  border-radius: 5px; /* Ajusta el radio según lo necesites */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Agrega transición para suavizar el cambio */
+}
+
+sql:hover {
+  background-color: #2e2e2e; /* Cambia el color al pasar el mouse */
+}
