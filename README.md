@@ -27,3 +27,5 @@ Aria es un innovador asistente de inteligencia artificial diseñado para facilit
 
 **Conclusión:**
 Aria revoluciona la forma en que interactuamos con las bases de datos, haciendo que la creación y gestión de consultas SQL sea más accesible, rápida y eficiente. Ya seas un desarrollador experimentado o un principiante, Aria está aquí para ayudarte a sacar el máximo provecho de tus datos.
+
+![UI](/doc/imgs/interface.png)
