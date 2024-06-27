@@ -42,8 +42,9 @@ class WebServer {
         this.open_end_points();        
     }
 
-    listen(){ // open server     
-        this.app.listen(this.port, () => {
+    listen(){ // open server
+	// use '0.0.0.0' to force ipv4
+        this.app.listen(this.port, '0.0.0.0', () => {
             console.log(`WebServer | PORT | ${this.port}`);
         });
     }
