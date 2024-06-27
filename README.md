@@ -29,3 +29,43 @@ Aria es un innovador asistente de inteligencia artificial diseñado para facilit
 Aria revoluciona la forma en que interactuamos con las bases de datos, haciendo que la creación y gestión de consultas SQL sea más accesible, rápida y eficiente. Ya seas un desarrollador experimentado o un principiante, Aria está aquí para ayudarte a sacar el máximo provecho de tus datos.
 
 ![UI](/doc/imgs/interface.png)
+
+## Instalación
+
+### Requisitos
+
+- NodeJS
+- Servidor de base de datos MySQL o compatible.
+- Instancia local de LMStudio con el modelo [lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF](https://huggingface.co/lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF).
+
+### Configuración
+
+1. Establecer servidor MySQL justo a la base de datos y sus credenciales (usuario y contraseña) en el archivo `.env`
+
+```bash
+#Database info
+HOST=<url-servidor>
+USER_DB=<usuario>
+PASSWORD=<contraseña>
+DATABASE=<base-de-datos>
+PORT=<puerto>
+```
+
+2. Establecer la url de la instancia de de LMStudio en el archivo `aria/Aria.js`
+
+```javascript
+...
+this.openai = new OpenAI({
+	apiKey: 'lm-studio', // Reemplaza con tu clave de API
+	baseURL: 'http://localhost:1234/v1', // URL del servidor local
+});
+...
+```
+
+3. Instalar paquetes necesarios
+
+`npm install`
+
+4. Ejecutar y abrir la url [http://localhost:3001](http://localhost:3001) o en su respectivo puerto (configurado en `.env`).
+
+`node start`
